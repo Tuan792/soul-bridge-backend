@@ -66,7 +66,7 @@ public class UserController {
     ) {
 
         LoginUserResponse response =
-                (LoginUserResponse) userService.login(request);
+                userService.login(request);
 
         return ResponseEntity
                 .ok(
